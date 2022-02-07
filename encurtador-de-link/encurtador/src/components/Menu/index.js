@@ -1,5 +1,5 @@
 import './menu.css'
-import { BsInstagram, BsGithub } from 'react-icons/bs'
+import { BsLinkedin, BsGithub } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
 export default function Menu() {
@@ -9,8 +9,11 @@ export default function Menu() {
         <BsGithub size={24} color="#fff" />
       </a>
 
-      <a className="social" href="https://instagram.com/leoserraom">
-        <BsInstagram size={24} color="#fff" />
+      <a
+        className="social"
+        href="https://www.linkedin.com/in/leonardo-serrão-171332104"
+      >
+        <BsLinkedin size={24} color="#fff" />
       </a>
 
       <Link className="menu-item" to="/links">

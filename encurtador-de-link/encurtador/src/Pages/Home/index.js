@@ -6,6 +6,7 @@ import Menu from '../../components/Menu'
 import LinkItem from '../../components/Link-Item'
 
 import api from '../../Services/api'
+import { saveLink } from '../../Services/store_links'
 
 function Home() {
   const [link, setLink] = useState('')
@@ -20,6 +21,8 @@ function Home() {
 
       setData(response.data)
       setShowModal(true)
+
+      saveLink('@encurtaLink', response.data)
 
       setLink('')
     } catch {

@@ -81,3 +81,13 @@
     display: none;
   }
 }
+
+.links-item span {
+  width: 100%;
+  color: #fff;
+
+  font-size: 20px;
+  text-align: center;
+
+  margin-top: 20px;
+}

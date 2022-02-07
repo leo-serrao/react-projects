@@ -1,3 +1,7 @@
+html {
+  overflow: hidden;
+}
+
 .container-home {
   width: 100%;
   height: 100vh;
@@ -14,8 +18,12 @@
   align-items: center;
 }
 
+.logo img {
+  width: 140px;
+}
+
 .logo h1 {
-  font-size: 60px;
+  font-size: 45px;
   color: #fff;
   margin-top: 8px;
 }
@@ -28,7 +36,7 @@
 }
 
 .area-input {
-  width: 540px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +80,7 @@
   border: none;
   outline: none;
   font-size: 18px;
+  color: #fff;
 }
 
 .area-input input::placeholder {
@@ -115,5 +124,11 @@
 
   .area-input {
     width: 85%;
+  }
+}
+
+@media (max-width: 390px) {
+  .logo h1 {
+    width: 200px;
   }
 }

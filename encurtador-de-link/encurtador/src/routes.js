@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Home from './Home'
-import Links from './Links'
+import Home from './Pages/Home'
+import Links from './Pages/Links'
+import Error from './Pages/Error'
 
 function RoutesApp() {
   return (
@@ -9,6 +10,7 @@ function RoutesApp() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/links" element={<Links />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   )

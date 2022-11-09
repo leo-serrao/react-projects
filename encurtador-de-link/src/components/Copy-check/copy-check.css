@@ -1,0 +1,17 @@
+.copy {
+  width: 30px;
+  height: 30px;
+  right: 24px;
+  margin-top: 10px;
+  animation: pop 0.3s;
+  position: absolute;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
